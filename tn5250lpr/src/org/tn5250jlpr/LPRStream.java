@@ -232,8 +232,16 @@ public final class LPRStream implements Runnable {
       
       if (args.length > 0) {
 	      argSession = args[0];
+	      if (argSession.startsWith("-")) {
+		      usage();
+		      return;
+	      }
 	      if (isSpecified("-dn", args)) 
 		      lpr.setDeviceName(getParm("-dn",args));
+	      else {
+		      usage();
+		      return;
+	      }
 	      
 	      if (isSpecified("-p", args)) 
 		      argPort = Integer.parseInt(getParm("-p",args));
@@ -304,7 +312,7 @@ public final class LPRStream implements Runnable {
 	{
 		System.out.println( "tn5250jlpr usage:" );
 		System.out.println( "\tjava -jar tn5250jlpr host -dnDeviceName -pPort -cpCodePage" );
-		System.out.println( "\thost is MANDATORY" );
+		System.out.println( "\thost and device name are MANDATORY" );
 	}
 
    private final ByteArrayOutputStream appendByteStream(byte abyte0[]) {
