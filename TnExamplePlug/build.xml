@@ -1,0 +1,59 @@
+
+<project name="TnExamplePlug" default="info" basedir=".">
+<property name="source.dir" value="${basedir}/src" />
+<property name="build.dir" value="${basedir}/bin" />
+<property name="dist.dir" value="${basedir}/dist" />
+<property name="lib.dir" value="${basedir}/lib" />
+
+<property name="runtime.classpath" value="tn5250j.jar" />
+<property name="jarname" value="TnExamplePlug.jar" />
+<path id="classpath">
+<fileset dir="${lib.dir}" >
+          <include name="*.jar" />
+          <include name="*.zip" />
+</fileset>
+</path>
+
+<target name="init" depends="clean">
+<mkdir dir="${build.dir}" />
+<mkdir dir="${lib.dir}" />
+<mkdir dir="${dist.dir}" />
+</target>
+
+<target name="clean" description="Cleanup your workspace (delete build-directory, ...)">
+<delete dir="${build.dir}" />
+<delete dir="${dist.dir}" />
+</target>
+
+
+<target name="compile" depends="init">
+<javac debug="true"
+		debuglevel="lines, vars, source"
+				srcdir="${source.dir}"
+                destdir="${build.dir}"
+                excludes="**/Cvs/**,**/*.ini/*.properties" >
+                <classpath>
+                <path refid="classpath"
+                />
+            </classpath>
+
+
+</javac>
+
+</target>
+
+<target name="dist" depends="compile, init">
+<jar jarfile="${dist.dir}/${jarname}">
+            <fileset dir="${build.dir}"/>
+            <fileset dir="${source.dir}"
+            includes="*.properties,*.props,*.gif,*.jpg"/>
+			<manifest>
+				<attribute name="Class-Path" value="${runtime.classpath}"/>
+			</manifest>
+</jar>
+</target>
+
+<target name="info">
+</target>
+
+</project>
