@@ -26,7 +26,10 @@
 #DEFAULT (echo ""; id; echo %{sVv}; date; cat) >> $CVSROOT/CVSROOT/commitlog
 
 #CVSROOT $CVSROOT/CVSROOT/syncmail -q -u %{sVv} mailman-cabal@python.org
-CVSROOT $CVSROOT/CVSROOT/syncmail -q -u %{sVv} kjpou@hotmail.com
+#CVSROOT $CVSROOT/CVSROOT/syncmail -q -u %{sVv} kjpou@hotmail.com
+CVSROOT $CVSROOT/CVSROOT/syncmail %{sVv} kjpou@hotmail.com
 
 #DEFAULT $CVSROOT/CVSROOT/syncmail -q -u %{sVv} mailman-checkins@python.org
-DEFAULT $CVSROOT/CVSROOT/syncmail -q -u %{sVv} tn5250j-commits@lists.sourceforge.net
+#DEFAULT $CVSROOT/CVSROOT/syncmail -q -u %{sVv} tn5250j-commits@lists.sourceforge.net
+DEFAULT $CVSROOT/CVSROOT/syncmail %{sVv} tn5250j-commits@lists.sourceforge.net
+
