@@ -5,7 +5,7 @@
     <!-- global properties -->
 
    <property name="name" value="tn5250jlpr"/>
-   <property name="Name" value="Tn5250jlpr"/>
+   <property name="Name" value="Tn5250Jlpr"/>
    <property name="version" value="0.0.1"/>
    <property name="year" value="2002"/>
 
@@ -17,7 +17,7 @@
    <property name="lib.dir" value="${basedir}/lib" />
    <property name="conf.dir" value="${basedir}/conf" />
 
-   <property name="main.class" value="org.tn5250jlpr.LPRStream"/>
+   <property name="main.class" value="org.tn5250jlpr.My5250"/>
    <property name="runtime.classpath" value="itext-0.92.jar"/>
 
     <!-- compile options -->

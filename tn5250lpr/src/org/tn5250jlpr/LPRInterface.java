@@ -29,6 +29,6 @@ import java.io.PrintWriter;
 public interface LPRInterface {
 
    public void process_print_record(Stream s) throws Exception;
-   public void openOutputFile() throws Exception;
+   public void openOutputFile(String path) throws Exception;
    public void closeOutputFile() throws Exception;
 }

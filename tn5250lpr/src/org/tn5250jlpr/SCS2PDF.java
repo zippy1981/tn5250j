@@ -66,12 +66,12 @@ public final class SCS2PDF implements LPRInterface {
 
    }
 
-   public void openOutputFile() {
+   public void openOutputFile(String path) {
       try {
          System.out.println("Opening file");
          if (document == null) {
             document = new Document();
-            bos = PdfWriter.getInstance(document,new FileOutputStream("outpdf.pdf"));
+            bos = PdfWriter.getInstance(document,new FileOutputStream(path + ".pdf"));
 //            document.setPageSize(new Rectangle(0.0f,
 //                                                0.0f,
 //                                                getPointFromInches(13),

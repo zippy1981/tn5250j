@@ -1,6 +1,6 @@
 package org.tn5250jlpr;
 /**
- * Title: tn5250J
+ * Title: tn5250Jlpr
  * Copyright:   Copyright (c) 2001
  * Company:
  * @author  Kenneth J. Pouncey

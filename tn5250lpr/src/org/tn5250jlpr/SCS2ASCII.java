@@ -58,11 +58,11 @@ public final class SCS2ASCII implements LPRInterface {
 
    }
 
-   public void openOutputFile() {
+   public void openOutputFile(String path) {
       try {
          System.out.println("Opening file");
          if (fos == null) {
-            fos = new FileOutputStream("output.txt");
+            fos = new FileOutputStream(path + ".txt");
             bos = new PrintWriter(new BufferedOutputStream(fos));
 
          }
