@@ -192,7 +192,7 @@ public final class tnvt implements Runnable, TN5250jConstants {
          producer = new DataStreamProducer(this,bin,dsq,abyte0);
          pthread = new Thread(producer);
 //         pthread.setPriority(pthread.MIN_PRIORITY);
-         pthread.setPriority(pthread.NORM_PRIORITY/2);
+         pthread.setPriority(Thread.NORM_PRIORITY/2);
          pthread.start();
 
          keepTrucking = true;
@@ -427,7 +427,7 @@ System.out.println(outputType.compareTo(OUTPUT_PDF) == 0);
          // lets play nicely with the others on the playground
 //         me.yield();
 
-         	pthread.yield();
+         	Thread.yield();
 
 		invited = false;
 
@@ -473,7 +473,7 @@ System.out.println(outputType.compareTo(OUTPUT_PDF) == 0);
 
          // lets play nicely with the others on the playground
 //         me.yield();
-         	pthread.yield();
+         	Thread.yield();
 
             }
             catch (SocketException se) {
