@@ -25,7 +25,6 @@ package org.tn5250jlpr.tools;
  *
  */
 
-import java.io.*;
 import java.util.*;
 
 public final class LangTool {

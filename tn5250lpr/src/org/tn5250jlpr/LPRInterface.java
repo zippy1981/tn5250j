@@ -25,7 +25,6 @@ package org.tn5250jlpr;
  *
  */
 
-import java.io.PrintWriter;
 public interface LPRInterface {
 
    public void process_print_record(Stream s) throws Exception;

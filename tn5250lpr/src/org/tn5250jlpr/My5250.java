@@ -26,16 +26,9 @@ package org.tn5250jlpr;
  */
 
 import java.util.*;
-import java.util.zip.*;
-import java.text.*;
 import java.io.*;
 import javax.swing.UIManager;
 import javax.swing.*;
-import java.awt.*;
-import javax.swing.event.ChangeListener;
-import javax.swing.event.ChangeEvent;
-import java.awt.font.*;
-import java.awt.geom.*;
 import org.tn5250jlpr.tools.*;
 import org.tn5250jlpr.event.*;
 import java.net.*;

@@ -22,7 +22,6 @@ package org.tn5250jlpr;
  */
 
 
-import org.tn5250jlpr.*;
 import org.tn5250jlpr.interfaces.SessionManagerInterface;
 import java.util.*;
 import java.io.*;

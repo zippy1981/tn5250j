@@ -22,12 +22,10 @@ package org.tn5250jlpr;
  */
 
 
-import org.tn5250jlpr.*;
 import org.tn5250jlpr.interfaces.SessionInterface;
 import org.tn5250jlpr.event.SessionListener;
 import org.tn5250jlpr.event.SessionChangeEvent;
 import java.util.*;
-import javax.swing.*;
 
 /**
  * A host session

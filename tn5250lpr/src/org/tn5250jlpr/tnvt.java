@@ -26,14 +26,9 @@ package org.tn5250jlpr;
  */
 
 import java.util.*;
-import java.text.*;
 import java.net.Socket;
 import java.net.*;
 import java.io.*;
-import java.awt.*;
-import javax.swing.*;
-import java.awt.event.*;
-import java.lang.reflect.*;
 import org.tn5250jlpr.tools.CodePage;
 
 public final class tnvt implements Runnable, TN5250jConstants {
