@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Main-Class: org.tn5250jlpr.LPRStream
+Class-Path: itext-0.92.jar
+
+
+
